@@ -1,14 +1,16 @@
-<script setup></script>
+<script setup>
+const props = defineProps(['close'])
+</script>
 
 <template>
-  <div class="modal">
+  <div v-if="close" class="modal">
     <p class="headline">Design By</p>
     <a
       class="link"
       href="https://dribbble.com/shots/26704397-Adaline-No-Code-App-Builder-Landing-Page"
       >Ofspace UX/UI</a
     >
-    <button>Close</button>
+    <button @click="$emit('close')">Close</button>
   </div>
 </template>
 
@@ -20,7 +22,7 @@
   background: white;
   color: #121212;
   padding: 1rem;
-  min-width: 180px;
+  min-width: 220px;
   border-radius: 0.25rem;
 
   .headline {
@@ -30,7 +32,7 @@
   .link {
     display: block;
     color: #121212;
-    margin: 12px 0;
+    margin-bottom: 1rem;
 
     &:hover {
       text-decoration: underline;
@@ -44,6 +46,7 @@
     color: white;
     border: 0;
     border-radius: 25px;
+    margin-left: auto;
     cursor: pointer;
 
     &:hover {
