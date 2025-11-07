@@ -1,0 +1,40 @@
+:root {
+  --accent-300: hsl(171, 53%, 45%);
+  --accent-400: hsl(171, 64%, 55%);
+  --accent-500: hsl(172, 52%, 39%);
+  --accent-600: hsl(171, 54%, 41%);
+  --accent-700: hsl(171, 55%, 22%);
+  --accent-800: hsl(171, 55%, 13%);
+  --accent-900: hsl(166, 31%, 11%);
+
+  --dark: hsl(167, 32%, 9%);
+  --light: hsl(170, 67%, 96%);
+  --light-soft: hsl(170, 67%, 88%);
+
+  --background: var(--dark);
+  --text: var(--light);
+  --text-soft: var(--light-soft);
+  --placeholder: var(--light-soft);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.1;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
