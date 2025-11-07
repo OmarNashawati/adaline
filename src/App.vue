@@ -6,6 +6,7 @@ import Hero from './components/sections/Hero.vue'
 import PricingSection from './components/sections/PricingSection.vue'
 import TestimonialsSection from './components/sections/TestimonialsSection.vue'
 import WhyUsSection from './components/sections/WhyUsSection.vue'
+import Modal from './components/ui/Modal.vue'
 import Navbar from './components/ui/navbar.vue'
 </script>
 
@@ -20,6 +21,7 @@ import Navbar from './components/ui/navbar.vue'
     <PricingSection />
     <FAQSection />
     <FooterSection />
+    <Modal />
   </main>
 </template>
 
